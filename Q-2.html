@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+
+    <h1>Quetion 2</h1>
+    <p>Create a Person class and with argument create a Father and Child method father age of 60 and child age of 20 print with argument.</p>
+    <table width="400px" border="1">
+        <thead>
+            <tr>
+                <th>#</th>
+                <th>Age</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <th>Father</th>
+                <th id="fage"></th>
+            </tr>
+            <tr>
+                <th>Child</th>
+                <th id="cage"></th>
+            </tr>
+        </tbody>
+    </table>
+
+    <script>
+        let fage = document.getElementById('fage');
+        let cage = document.getElementById('cage');
+
+        class Person {
+            father(age){
+                fage.innerHTML = age;
+            }
+
+            child(age){
+                cage.innerHTML = age;
+            }
+        }
+
+        let q2 = new Person();
+        q2.father(60);
+        q2.child(20);
+    </script>
+</body>
+
+</html>

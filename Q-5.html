@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+
+    <h1>Quetion 5</h1>
+    <p>Create a mobile functional class default set model no then set color using prototyping .</p>
+    <br>
+    <h2>Ans :- <br> <span id="msg"></span></h2>
+
+
+    <script>
+        let msg = document.getElementById('msg');
+    
+        function Mobile() {
+            msg.innerHTML += "This mobile model is Redami A1+ <br>";
+        }; 
+
+        Mobile.prototype.color = "Black";
+
+        Mobile.prototype.mcolor = function () {
+            msg.innerHTML += `Mobile color is ${this.color}`;
+        }
+
+        let c = new Mobile();
+        c.mcolor();
+    </script>
+</body>
+
+</html>

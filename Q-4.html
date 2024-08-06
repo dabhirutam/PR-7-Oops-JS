@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+
+    <h1>Quetion 4</h1>
+    <p> Create a shape class and create a rectangle and circle method find circle area(3.14*r*r) and rectangle area (width*height) using with argument.</p>
+    <table width="400px" border="1">
+        <thead>
+            <tr>
+                <th>Shape</th>
+                <th>Area</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <th>Circle</th>
+                <th id="carea"></th>
+            </tr>
+            <tr>
+                <th>Rectangle</th>
+                <th id="rarea"></th>
+            </tr>                
+        </tbody>
+    </table>
+
+    <script>
+        let carea = document.getElementById('carea');
+        let rarea = document.getElementById('rarea');
+
+        class Shape {
+
+            circle(r){
+                return 3.14 * r * r;
+            }
+
+            rectangle(w,h){
+                return w * h;
+            }
+            
+        }
+
+        let q4 = new Shape();
+        carea.innerHTML = q4.circle(10);
+        rarea.innerHTML = q4.rectangle(10,20);
+        
+    </script>
+</body>
+
+</html>

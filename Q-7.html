@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>Quetion 7</h1>
+    <p>Array prototyping to upload game array and all game name are convert Uppercase .</p>
+    <br>
+    <h2>Ans :- <br> <span id="msg"></span></h2>
+
+    <script>
+        let msg = document.getElementById('msg');
+        
+        Array.prototype.uppercase = function (){
+            msg.innerHTML = "Array = [ ";
+            this.forEach( (el) => {
+                msg.innerHTML += el.toUpperCase() + ", ";
+            }); 
+            msg.innerHTML += " ]";
+        };
+
+        let games = ["Free fire", "Ludo", "pubg", "Callduty", "Chess"];
+        games.uppercase();
+    </script>
+</body>
+</html>

@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+
+    <h1>Quetion 1</h1>
+    <p>Create a School class and create a student , faculty and peon method and student name email contact print same as
+        faculty and peon using class & object.</p>
+    <table width="800px" border="1">
+        <thead>
+            <tr>
+                <th>#</th>
+                <th>Name</th>
+                <th>Email</th>
+                <th>Contact</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <th>Student</th>
+                <th id="sname"></th>
+                <th id="semail"></th>
+                <th id="scontact"></th>
+            </tr>
+            <tr>
+                <th>Faculty</th>
+                <th id="fname"></th>
+                <th id="femail"></th>
+                <th id="fcontact"></th>
+            </tr>
+            <tr>
+                <th>Peon</th>
+                <th id="pname"></th>
+                <th id="pemail"></th>
+                <th id="pcontact"></th>
+            </tr>
+        </tbody>
+    </table>
+
+    <script>
+        let sname = document.getElementById('sname');
+        let semail = document.getElementById('semail');
+        let scontact = document.getElementById('scontact');
+        let fname = document.getElementById('fname');
+        let femail = document.getElementById('femail');
+        let fcontact = document.getElementById('fcontact');
+        let pname = document.getElementById('pname');
+        let pemail = document.getElementById('pemail');
+        let pcontact = document.getElementById('pcontact');
+
+        class School {
+            student() {
+                sname.innerHTML = "Rutam";
+                semail.innerHTML = "dabhirutam34@gmail.com";
+                scontact.innerHTML = "9316313729";
+            }
+
+            faculty() {
+                fname.innerHTML = "Keyur sir";
+                femail.innerHTML = "keyurgohil@gmail.com";
+                fcontact.innerHTML = "8978564533";
+            }
+
+            peon() {
+                pname.innerHTML = "Parthbhai";
+                pemail.innerHTML = "parth56@gmail.com";
+                pcontact.innerHTML = "9878965434";
+            }
+        }
+
+        let q1 = new School();
+        q1.student();
+        q1.faculty();
+        q1.peon();
+    </script>
+</body>
+
+</html>

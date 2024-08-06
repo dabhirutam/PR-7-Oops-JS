@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>Quetion 6</h1>
+    <p>Using Object prototyping create Emp function already added name, email, salary but not add designation. designation add by object prototyping.</p>
+    <br>
+    <h2>Ans :- <br> <span id="msg"></span></h2>
+
+    <script>
+        let msg = document.getElementById('msg');
+        function Emp() {
+            this.name = "Rutam";
+            this.email = "dabhirutam34@gmail.com";
+            this.salary = "30,000";
+        }
+
+        Emp.prototype.designation = "Employee";
+
+        let obj = new Emp();
+
+        msg.innerHTML = `name = ${obj.name} <br> email = ${obj.email} <br> salary = ${obj.salary} <br> designation = ${obj.designation}`;
+        
+    </script>
+</body>
+</html>
